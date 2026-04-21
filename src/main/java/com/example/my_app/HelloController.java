@@ -10,4 +10,8 @@ public class HelloController {
     public String home() {
         return "Hello, Kerry Ann. Server is alive.";
     }
+    @GetMapping("/helloworld")
+    public String helloPage() {
+        return "Hello World!";
+    }
 }
