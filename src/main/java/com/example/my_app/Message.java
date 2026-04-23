@@ -1,5 +1,6 @@
 package com.example.my_app;
 
+import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 
 /*
@@ -9,9 +10,14 @@ Simple DTO that Spring will serialize to JSON in HTTP responses
    }
 
    Spring quietly does Java Object -> JSON. 
+
+   UPDATE: with @Entity, we're turning this into an entity. 
 */
 
+@Entity
 public class Message {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotBlank(message = "Text must not be empty")

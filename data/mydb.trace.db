@@ -1,0 +1,3 @@
+2026-04-23 23:33:32.639656+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT WHERE [*]* FROM MESSAGE"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+SELECT WHERE * FROM MESSAGE [42001-224]
